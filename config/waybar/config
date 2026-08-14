@@ -1,0 +1,38 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-center": ["sway/window"],
+    "modules-right": ["pulseaudio", "cpu", "memory", "clock", "battery", "tray"],
+    "clock": {
+    "format": "{:%H:%M}  ",
+    "format-alt": "{:%A, %B %d, %Y (%R)}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>"
+},
+
+"pulseaudio": {
+    "format": "{volume} 󰕾",
+    "format-muted": "{volume} 󰸈"
+},
+
+"cpu": {
+    "format": "{usage}% 󰍛"
+},
+
+"memory": {
+    "format": "{used:0.1f}G"
+},
+
+"battery": {
+    "bat": "BAT1",
+    "interval": 10,
+    "states": {
+        "warning": 30,
+        "critical": 15
+    },
+    "format": "{capacity} {icon}",
+    "format-icons": ["", "", "", "", ""]
+}
+
+}

@@ -1,0 +1,27 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free";
+}
+
+window {
+    background: #1B2A1E;
+    color: #D8C9B8;
+}
+
+#workspaces button {
+    color: #D8C9B8;
+}
+
+#workspaces button.active {
+    background: #6A8C50;
+    color: #1B2A1E;
+}
+
+#clock, #cpu, #memory, #pulseaudio {
+    padding: 0 5px;
+    margin: 0 5px;
+}
+
+#battery{
+	margin: 0 5px;
+	margin-right: 12px;
+}

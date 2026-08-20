@@ -52,17 +52,22 @@ Packages this config depends on:
 ## Notes / cheatsheet
 
 ### Hyprland — borders & gaps
-`config/hypr/hyprland.conf`
+`config/hypr/hyprland.lua`
+```lua
+hl.config({
+    general = {
+        gaps_in = 2,
+        gaps_out = 2,
+        border_size = 0,
+        col = {
+            active_border = 0xFF6A8C50,
+            inactive_border = 0xFF1B2A1E,
+        },
+    },
+})
 ```
-general {
-    gaps_in = 2
-    gaps_out = 2
-    border_size = 0
 
-    col.active_border = 0xFF6A8C50
-    col.inactive_border = 0xFF1B2A1E
-}
-```
+Note: Hyprland config is Lua now (`hyprland.conf` is deprecated and will stop loading in a future release). If `hyprland.lua` is present, it's used instead of `hyprland.conf`.
 
 ### Waybar — top bar
 `config/waybar/style.css`, `config/waybar/config`
